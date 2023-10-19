@@ -1,4 +1,6 @@
-name: build
+
+
+    name: build
 on: [push, pull_request]
 jobs:
   build:
@@ -54,7 +56,7 @@ jobs:
     - name: Compiling
       shell: bash
       run: |
-        cd build & ninja
+        cd build &amp;&amp ninja
     - uses: actions/upload-artifact@v3
       with:
         name: aseprite
